@@ -83,6 +83,14 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  #box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+  }
   
   /* Animation for the result */
   @keyframes fadeIn {
