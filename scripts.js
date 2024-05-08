@@ -5,6 +5,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
+
+  try{
   if (dividend === "" || divider === "") {
     throw Error("Division not performed. Both values are required in inputs.Try again");
   }
@@ -12,7 +14,10 @@ form.addEventListener("submit", (event) => {
     throw Error("Division not performed. Invalid number provided. Try again");
   }
   if (isNaN(dividend) || isNaN(divider)) {
-    throw Error("“Something critical went wrong. Please reload the page");
+    throw Error("Something critical went wrong. Please reload the page");
   }
   result.innerText = Math.floor(dividend / divider);
+} catch (error) {
+  result.innerText = error.message;
+}
 });
