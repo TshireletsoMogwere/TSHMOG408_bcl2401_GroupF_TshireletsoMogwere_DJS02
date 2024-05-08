@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
   if (dividend === "" || divider === "") {
     throw Error("Division not performed. Both values are required in inputs.Try again");
   }
-  if (divider === 0) {
+  if (divider === '0') {
     throw Error("Division not performed. Invalid number provided. Try again");
   }
   result.innerText = Math.floor(dividend / divider);
