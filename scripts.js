@@ -18,6 +18,7 @@ form.addEventListener("submit", (event) => {
     throw Error("Something critical went wrong. Please reload the page");
   }
   result.innerText = Math.floor(dividend / divider);
+  console.log( Math.floor (dividend / divider));
 } catch (error) {
   result.innerText = error.message;
   console.error(error);
