@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
     throw Error("Division not performed. Invalid number provided. Try again");
   }
   if (isNaN(dividend) || isNaN(divider)) {
-    result.classList.add("critical-error");
+    result.classList.add("critical-error", "error-message");
     throw Error("Something critical went wrong. Please reload the page");
   }
   result.innerText = Math.floor(dividend / divider);
