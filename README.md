@@ -21,10 +21,6 @@ I had to console and throw errors when empty inputs are submitted, an invalid di
 - [the Gherkin syntax](https://docs.behat.org/en/v2.5/guides/1.gherkin.html)
 - [Cucumber](https://cucumber.io/docs/gherkin/reference/)
 
-### Challenges faced
-
-- 
-
 ### Skills acquired
 
 - Critical Thinking
