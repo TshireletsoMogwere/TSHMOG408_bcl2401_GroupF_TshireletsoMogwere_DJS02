@@ -20,5 +20,6 @@ form.addEventListener("submit", (event) => {
   result.innerText = Math.floor(dividend / divider);
 } catch (error) {
   result.innerText = error.message;
+  console.error(error);
 }
 });
